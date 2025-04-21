@@ -18,12 +18,26 @@
             placeholder="Tên đăng nhập"
             required
           />
-          <input
+          <!-- <input
             type="password"
             id="login-password"
             placeholder="Mật khẩu"
             required
-          />
+          /> -->
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="login-password"
+              placeholder="Mật khẩu"
+              required
+            />
+            <span
+              class="toggle-password"
+              onclick="togglePassword('login-password')"
+              >👁️</span
+            >
+          </div>
+
           <button type="submit">Đăng nhập</button>
           <p>
             Bạn chưa có tài khoản?
@@ -38,13 +52,28 @@
             placeholder="Tên đăng nhập"
             required
           />
-          <input
+          <!-- <input
             type="password"
             id="register-password"
             placeholder="Mật khẩu"
             required
-          />
+          /> -->
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="register-password"
+              placeholder="Mật khẩu"
+              required
+            />
+            <span
+              class="toggle-password"
+              onclick="togglePassword('register-password')"
+              >👁️</span
+            >
+          </div>
+
           <button type="submit">Đăng ký</button>
+
           <p>Đã có tài khoản? <a href="#" id="switch-to-login">Đăng nhập</a></p>
         </form>
       </div>

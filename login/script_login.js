@@ -43,3 +43,11 @@ loginForm.onsubmit = function (e) {
     alert("Sai tên đăng nhập hoặc mật khẩu.");
   }
 };
+function togglePassword(id) {
+  const input = document.getElementById(id);
+  if (input.type === "password") {
+    input.type = "text";
+  } else {
+    input.type = "password";
+  }
+}

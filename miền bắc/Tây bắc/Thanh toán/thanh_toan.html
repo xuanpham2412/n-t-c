@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán Tour Du Lịch</title>
+    <link rel="stylesheet" href="./style_thanh_toan.css" />
+    <script src="./js_thanh_toan.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tour-info">
+        <img src="../img_tay_bac/1679456126-doi-che.jpg" alt="Tour Tây Bắc" />
+        <div class="tour-details">
+          <h2>
+            Du lịch Tây Bắc Lễ 30/4 - Mộc Châu - Sơn La - Điện Biên - Sapa - Đền
+            Hùng từ Sài Gòn 2025
+          </h2>
+          <ul>
+            <li><strong>Mã tour:</strong> 18130</li>
+            <li><strong>Thời gian:</strong> 6 ngày</li>
+            <li>
+              <strong>Giá khởi điểm:</strong> 14,099,000 đ ( Chưa bao gồm các
+              chi phí phát sinh )
+            </li>
+            <li><strong>Ngày khởi hành:</strong> 29/04/2025</li>
+            <li><strong>Nơi khởi hành:</strong> Hồ Chí Minh</li>
+            <li><strong>Số chỗ còn nhận:</strong> 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="notice">
+        Các khoản phụ phí dành riêng cho khách nước ngoài, Việt kiều, phụ thu
+        phòng đơn, phụ thu nâng hạng dịch vụ tour… Nhân viên Du Lịch Việt sẽ gọi
+        điện thoại tư vấn cho quý khách ngay sau khi quý khách hoàn tất booking.
+        Thông cảm bất tiện này!<br />
+        Trường hợp quý khách không đồng ý các khoản phát sinh, phiếu booking của
+        quý khách sẽ không có hiệu lực.
+      </div>
+
+      <h3>🧾 BẢNG GIÁ TOUR CHI TIẾT</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Loại giá/đối tượng</th>
+            <th>Người lớn (&gt;= 11 tuổi)</th>
+            <th>Trẻ em (5 - 11 tuổi)</th>
+            <th>Trẻ nhỏ (2 - 5 tuổi)</th>
+            <th>Sơ sinh (&lt; 2 tuổi)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Giá</td>
+            <td>14,099,000 đ</td>
+            <td>11,640,000 đ</td>
+            <td>6,000,000 đ</td>
+            <td>500,000 đ</td>
+          </tr>
+          <tr>
+            <td>Phụ thu Nước Ngoài</td>
+            <td>790,000 đ</td>
+            <td>0 đ</td>
+            <td>0 đ</td>
+            <td>0 đ</td>
+          </tr>
+          <tr>
+            <td>Phụ thu Việt Kiều</td>
+            <td>0 đ</td>
+            <td>0 đ</td>
+            <td>0 đ</td>
+            <td>0 đ</td>
+          </tr>
+          <tr>
+            <td>Phụ thu Phòng đơn</td>
+            <td colspan="4">2,200,000 đ</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>📋 THÔNG TIN LIÊN HỆ</h3>
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="Họ tên *" />
+          <input type="email" placeholder="Email *" />
+          <input type="text" placeholder="Số điện thoại *" />
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="Địa chỉ *" />
+          <input type="text" placeholder="Ghi chú" />
+        </div>
+
+        <div class="form-row">
+          <label
+            >Người lớn: <input id="nguoi-lon" type="number" min="0"
+          /></label>
+          <label
+            >Trẻ em 5-11 tuổi: <input id="tre-em" type="number" min="0"
+          /></label>
+          <label
+            >Trẻ nhỏ 2-5 tuổi: <input id="tre-nho" type="number" min="0"
+          /></label>
+          <label>Sơ sinh: <input id="so-sinh" type="number" min="0" /></label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Phụ thu visa:
+            <select id="chon-visa">
+              <option>Không</option>
+              <option>Có</option>
+            </select>
+          </label>
+          <label
+            >Số lượng visa: <input id="so-visa" type="number" min="0"
+          /></label>
+
+          <label>
+            Phụ thu phòng đơn:
+            <select id="chon-phong-don">
+              <option>Không</option>
+              <option>Có</option>
+            </select>
+          </label>
+          <label
+            >Số lượng phòng đơn: <input id="so-phong-don" type="number" min="0"
+          /></label>
+        </div>
+
+        <div class="total">
+          Tổng giá trị: <strong id="tong-gia">0 đ</strong>
+        </div>
+
+        <h3>💳 PHƯƠNG THỨC THANH TOÁN</h3>
+        <div class="payment-options">
+          <label
+            ><input type="radio" name="payment" /> Thanh toán tại quầy Du Lịch
+            Việt</label
+          >
+          <label
+            ><input type="radio" name="payment" /> Thanh toán qua ZaloPay</label
+          >
+          <label
+            ><input type="radio" name="payment" /> Thanh toán qua MoMo</label
+          >
+          <label
+            ><input type="radio" name="payment" /> Thanh toán chuyển khoản qua
+            ngân hàng</label
+          >
+          <label
+            ><input type="radio" name="payment" /> Thanh toán qua VNPAY</label
+          >
+          <label
+            ><input type="radio" name="payment" /> Thanh toán qua Viettel
+            Money</label
+          >
+        </div>
+
+        <button class="submit-btn">HOÀN THÀNH</button>
+      </form>
+    </div>
+  </body>
+</html>

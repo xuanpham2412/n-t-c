@@ -14,10 +14,10 @@ body {
 
 .container {
   background: #fff;
-  padding: 30px 40px;
+  padding: 40px 50px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(135, 132, 132, 0.2);
-  width: 320px;
+  width: 400px; /* tăng từ 320px lên */
 }
 
 .form-box h2 {
@@ -58,4 +58,12 @@ p {
 a {
   color: #0072ff;
   cursor: pointer;
+}
+.toggle-password {
+  position: relative;
+  top: -34px;
+  left: calc(100% - 30px);
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
 }
